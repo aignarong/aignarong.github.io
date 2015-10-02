@@ -1,40 +1,38 @@
 <html>
-
 <head>
-	<title>Da Website</title>
-	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<title>AIG's GALLERY</title>
 </head>
+
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
+
 <body>
 
-<h1>HEADING ONE</h1>
-<h2>HEADING TWO</h2>
+<div class="wrapper">
 
-<p>p a r a g r a p h</p>
+<h1>AIG's GALLERY</h1>
+<p>Examples of Processing Sketches</p>
 
-<a href="http://www.portatlas.com">port/atlas</a>
 
-<div class="mydiv">
+<canvas data-processing-sources="sketches/sketch1/sketch1.pde" id="firstsketch" class="selected"></canvas>
+<canvas data-processing-sources="sketches/sketch2/sketch2.pde" class="hidden" id="secondsketch"></canvas>
+<canvas data-processing-sources="sketches/sketch3/sketch3.pde 
+sketches/sketch3/ball.pde" class="hidden" id="thirdsketch"></canvas>
+<canvas data-processing-sources="sketches/sketch4/sketch4.pde 
+sketches/sketch4/ball.pde" class="hidden" id="fourthsketch"></canvas>
 
-<a href="welcomepage.html">Velkomen</a>
-</div>
+<ul>
+	<li id="one"><p>1</p></li>
+	<li id="two"><p>2</p></li>
+	<li id="three"><p>3</p></li>
+	<li id="four"><p>4</p></li>
+</ul>
 
-<a href="/sketch_forweb">processing</a>
+<! the below jquery scrip is hosted from google >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src = "scripts/processing.js"></script>
+<script type="text/javascript" src = "scripts/scripts.js"></script>
 
-<div class="mydiv relative">
-	<h1>This is inside a relative div.</h1>
-	<p>A div is a group of things</p>
-</div>
-
-<div class="mydiv fixed" id="clickedthisone">
-	<h1>This is inside a fixed div.</h1>
-	<p>A div is a group of things</p>
-</div>
-
-<div class="mydiv absolute">
-	<h1>check</h1>
-	<p>A div is a group of things</p>
-</div>
-
-<script type="text/javascript" src="<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>"></script>
+<div>
 </body>
 </html>
