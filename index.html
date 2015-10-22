@@ -1,38 +1,130 @@
-<html>
-<head>
-	<title>AIG's GALLERY</title>
-</head>
+<!doctype html>
+<html lang="en">
 
-<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<head>
+		<meta charset="utf-8">
 
-<body>
+		<title>Creative Code: Final Project Overview</title>
 
-<div class="wrapper">
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
 
-<h1>AIG's GALLERY</h1>
-<p>Examples of Processing Sketches</p>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h2>Creative Code Immersive</h2>
+					<h3> <i>Final Project Overview</i></h3>
+					<p>
+						<small>by <a href="http://www.portatlas.com">Andrew V.</a></small>
+					</p>
+				</section>
+
+				<section data-transition="slide">
+					<p>
+						<img src="img/music.jpg">
+					</p>
+				</section>
+
+				<section data-transition="zoom">
+					<p>
+						<img src="img/wheadphones.jpg">
+					</p>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				
+				<section data-transition="convex">
+					<section>
+						<h3>PROJECT OVERVIEW: <i>Objective</i> </h3>
+						<ul>
+							<li>The goal is to enable people to enjoy music with others around them.</li>
+							<li>It does so by aggregating everyones' playlist in the same physical space and playing back songs that the majority would enjoy.</li>
+						</ul>
+	
+					</section>
+					<section>
+						<h3>PROJECT OVERVIEW: <i>Physical Description</i></h3>
+						<ul>
+							<li>Web Application built with <a href="https://developer.spotify.com/web-api/">Spotify Web API</a></li>
+							<ul>
+								<li>Users (on Spotify) would access the Web App and authorize the app to pull his/her playlist from Spotify</li>
+								<li>The Web App would aggregate all playlists in the area and create a Group playlist based on shared attributes</li>
+							</ul>
+							<li>Visualization</li>
+							<ul>
+								<li>Informational graphics of the current track and playlist visualized with <a href="https://processing.org/">Processing</a> </li>
+							</ul>
+						</ul>
+					</section>
+
+				<section>
+					<h2>THANK YOU</h2>
+					<p>
+					</p>
+				</section>
 
 
-<canvas data-processing-sources="sketches/sketch1/sketch1.pde" id="firstsketch" class="selected"></canvas>
-<canvas data-processing-sources="sketches/sketch2/sketch2.pde" class="hidden" id="secondsketch"></canvas>
-<canvas data-processing-sources="sketches/sketch3/sketch3.pde 
-sketches/sketch3/ball.pde" class="hidden" id="thirdsketch"></canvas>
-<canvas data-processing-sources="sketches/sketch4/sketch4.pde 
-sketches/sketch4/ball.pde" class="hidden" id="fourthsketch"></canvas>
 
-<ul>
-	<li id="one"><p>1</p></li>
-	<li id="two"><p>2</p></li>
-	<li id="three"><p>3</p></li>
-	<li id="four"><p>4</p></li>
-</ul>
+			</div>
 
-<! the below jquery scrip is hosted from google >
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script type="text/javascript" src = "scripts/processing.js"></script>
-<script type="text/javascript" src = "scripts/scripts.js"></script>
+		</div>
 
-<div>
-</body>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
 </html>
